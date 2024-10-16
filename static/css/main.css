@@ -1,0 +1,19 @@
+/* Style for the div block */
+/* main.css (for index.html) */
+div {
+    background-color: yellow; /* Yellow background */
+    border: 3px solid black; /* Black boundaries */
+    border-radius: 10px; /* Rounded corners (optional) */
+    padding: 30px; /* Space inside the div */
+    width: 300px; /* Width of the rectangle */
+    margin: 60px auto; /* Center the div horizontally */
+}
+
+/* Additional styling for the form */
+form {
+    text-align: center; /* Center text inside the form */
+}
+
+h1 {
+    margin-bottom: 30px;
+}

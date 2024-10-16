@@ -1,0 +1,33 @@
+project setup-
+
+a) open folder 'FlaskCalculatorProject' in Vs code
+b) ... -> terminal-> new terminal -> create a virtual environment
+c) activate this environment
+d) install flask there
+e) make requirements.txt
+f) make 'templates' folder for html pages
+g) make 'static/css' folder for the css files
+h) make app.py for the pyhton backend code
+i) to run project type 'python app.py' in terminal 
+
+
+
+
+
+
+Detailed Breakdown
+<link rel="stylesheet" href="...">
+
+<link> Tag: This HTML tag is used to link external resources to your HTML document, such as stylesheets, icons, or fonts.
+rel="stylesheet": The rel attribute specifies the relationship between the current document and the linked resource. In this case, it indicates that the linked file is a stylesheet.
+href="...": The href attribute provides the URL to the external resource—in this case, the CSS file.
+{{ url_for('static', filename='css/main.css') }}
+
+{{ ... }}: These double curly braces denote a Jinja2 expression in Flask templates. Jinja2 is Flask’s default templating engine, allowing you to embed Python-like expressions within your HTML.
+url_for('static', filename='css/main.css'): This is a Flask function that generates the correct URL for the specified static file.
+Understanding url_for('static', filename='css/main.css')
+url_for Function: This Flask function is used to build a URL for a given function or endpoint. It's particularly useful for dynamically generating URLs that are flexible and maintainable, especially when deploying your app in different environments or under different URL prefixes.
+
+'static': This is the endpoint name for serving static files in Flask. By default, Flask automatically sets up an endpoint named 'static' to serve files from the static folder in your project directory.
+
+filename='css/main.css': This argument specifies the path to the static file relative to the static folder. In your project structure, you have:
